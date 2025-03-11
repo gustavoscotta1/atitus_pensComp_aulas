@@ -1,13 +1,14 @@
 # Pensamento Computacional - Execícios de aula
 
 - [Prof Matheus Jardim Bernardes](https://matheusjardimb.com/)
+- [Gustavo de Souza Scotta](https://github.com/gustavoscotta1)
 - [Atitus.edu.br](https://atitus.edu.br/)
 
 Exercícios de aula da disciplina de Pensamento Computacional.
 
 ## Sobre mim
 
---PREENCHER--
+Eu sou o Gustavo, estudante do primeiro semestre de ciência da computação da faculdade Atitus
 
 ## DICAS:
 
