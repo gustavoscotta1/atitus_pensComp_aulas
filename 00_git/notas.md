@@ -6,3 +6,4 @@
 - https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md
 
 ![INTER](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR68vwmxLehqx4RzXnMM0c0OteqPkSjZwWqMQ&s)
+

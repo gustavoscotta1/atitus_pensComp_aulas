@@ -10,6 +10,18 @@ Exercícios de aula da disciplina de Pensamento Computacional.
 
 Eu sou o Gustavo, estudante do primeiro semestre de ciência da computação da faculdade Atitus
 
+
+# TABELA
+
+|cia aérea | valor | horário |
+| -------- | ----- | ------- | 
+|  latam   | R$200 |  11:30  |
+|   azul   | R$220 |  11:30  |
+|   gol    | R$210 |  11:15  |
+
+
+https://github.dev/gustavoscotta1/atitus_pensComp_aulas/blob/main/00_git/notas.md 
+
 ## DICAS:
 
 - Entenda completamente o que o exercício solicita ANTES de começar a programar.
