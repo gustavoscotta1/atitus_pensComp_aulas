@@ -30,4 +30,5 @@ assert dia_para_segundo(0) == 0
 assert dia_para_segundo(1) == 86400
 assert dia_para_segundo(2) == 172800
 
+
 print("Terminou com sucesso!")
