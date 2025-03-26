@@ -3,11 +3,11 @@ def horoscopo(mes):
         return "Valor inválido"
     if mes > 0 and mes <= 3:
         return "Você é do signo de Python"        
-    elif mes > 4 and mes <= 6:
+    if mes > 4 and mes <= 6:
         return "Você é do signo de Java"
-    elif mes > 7 and mes <= 9:
+    if mes > 7 and mes <= 9:
         return "Você é do signo de PHP"
-    elif mes > 10 and mes <= 12:
+    if mes > 10 and mes <= 12:
         return "Você é do signo de TypeScript"   
 
 def test(): 
