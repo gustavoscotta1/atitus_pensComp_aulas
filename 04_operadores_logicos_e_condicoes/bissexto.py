@@ -15,6 +15,16 @@ def proximo_bissexto(ano):
     if ano % 4 == 3:
         return ano + (1)
 
+# Soluçao do professor
+#def proximo_bissexto(ano):
+#    return (ano + 3) // 4 * 4 
+
+# Outra soluçao
+#def proximo_bissexto(valor):
+#    if eh_bissexto(valor):
+#        return valor
+#    return valor + (4 - (valor % 4))
+
 def test(): 
     assert eh_bissexto(0)
     assert eh_bissexto(2020)
