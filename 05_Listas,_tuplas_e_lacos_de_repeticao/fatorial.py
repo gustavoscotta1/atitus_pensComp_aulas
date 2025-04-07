@@ -1,4 +1,12 @@
 def fatorial(numero):
+    if numero < 0:
+        return None  
+    resultado = 1
+    i = 1
+    while i <= numero:
+        resultado *= i
+        i += 1
+    return resultado
     
 
 

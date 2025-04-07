@@ -1,9 +1,12 @@
-def somatorio(number): 
-    if number < 0:
-        return None 
-    result = 0 
-    # PREENCHER
-    return result 
+def somatorio(numero):
+    if numero <= -1:
+        return None
+    resultado = 0
+    contador = 1
+    while contador <= numero:
+        resultado = resultado + contador
+        contador = contador + 1
+    return resultado
 
 def test():
     assert somatorio(-1) is None
