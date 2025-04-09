@@ -9,7 +9,7 @@ def baskhara(a, b, c):
     else:
         x1 = (-b + math.sqrt(discriminante)) / (2 * a)
         x2 = (-b - math.sqrt(discriminante)) / (2 * a)
-        return [x1, x2]
+        return [x2, x1]
 
 def test():
     assert baskhara(1, -3, 2) == [2, 1]
