@@ -1,3 +1,4 @@
+import math
 def baskhara(a, b, c):
     discriminante = b**2 - 4*a*c
     if discriminante < 0:
@@ -6,8 +7,8 @@ def baskhara(a, b, c):
         x = -b / (2 * a)
         return x
     else:
-        x1 = (-b + (discriminante)**0.5) / (2 * a)
-        x2 = (-b - (discriminante)**0.5) / (2 * a)
+        x1 = (-b + math.sqrt(discriminante)) / (2 * a)
+        x2 = (-b - math.sqrt(discriminante)) / (2 * a)
         return [x1, x2]
 
 def test():
