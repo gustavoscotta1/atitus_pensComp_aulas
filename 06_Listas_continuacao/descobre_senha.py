@@ -12,4 +12,3 @@ def descobre_senha():
         else:
             print("Senha incorreta. Tente novamente.")
     
- 
