@@ -1,18 +1,33 @@
-def limpa_tela():
-    import os
+import os
+import time
 
-    os.system("cls" if os.name == "nt" else "clear")  # Limpa o console
+def anima_letra_A(largura=40, altura=10, duracao=100):
+    x, y = 0, 0  
+    dx, dy = 1, 1  
+    encostou = 0
 
+    for _ in range(duracao):
+        os.system('cls' if os.name == 'nt' else 'clear')
 
-def espera():
-    import time
+        for linha in range(altura):
+            if linha == y:
+                print(' ' * x + 'A')  
+            else:
+                print()  
 
-    time.sleep(0.5)  # Espera meio segundo (500ms)
+        time.sleep(0.05)
 
+        x += dx
+        y += dy
 
-def desenha_tela():
-    # Preencher
-    pass
+        if x <= 0 or x >= largura - 1:
+            dx *= -1
+            encostou += 1
 
+        if y <= 0 or y >= altura - 1:
+            dy *= -1
+            encostou += 1
 
-desenha_tela()
+    print(f'\nA letra "A" encostou nas paredes {encostou} vezes.')
+
+    anima_letra_A()
