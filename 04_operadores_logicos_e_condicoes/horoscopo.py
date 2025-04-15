@@ -24,9 +24,9 @@ def test():
     assert horoscopo(10) == "Você é do signo de TypeScript"
     assert horoscopo(12) == "Você é do signo de TypeScript"
 
-    assert horoscopo(-1) == "Valor iválido"
-    assert horoscopo(0) == "Valor iválido"
-    assert horoscopo(13) == "Valor iválido"
+    assert horoscopo(-1) == "Valor inválido"
+    assert horoscopo(0) == "Valor inválido"
+    assert horoscopo(13) == "Valor inválido"
 
 print(horoscopo(5))
 print(horoscopo(12))
