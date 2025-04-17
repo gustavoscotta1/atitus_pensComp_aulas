@@ -13,5 +13,5 @@ meio = altura // 2
         print(espacos + estrelas)
 
 
-altura = int(input("Digite um valor ímpar para a altura do losango: "))
-desenha_losango(altura)
+# altura = int(input("Digite um valor ímpar para a altura do losango: "))
+desenha_losango(7)
