@@ -10,7 +10,7 @@ PALAVRAS = {
 # Função para exibir as regras do jogo para o jogador
 def exibir_regras():
     print("==============================================")
-    print("            Bem-vindo ao Word Guess!          ")
+    print("            Bem-vindo ao TERMO.OOO!          ")
     print("==============================================")
     print("Regras do jogo:")
     print("1. Escolha a dificuldade: palavras de 5, 6 ou 7 letras.")
