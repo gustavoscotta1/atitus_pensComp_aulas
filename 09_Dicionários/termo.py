@@ -1,16 +1,16 @@
-import random  # Importa o módulo random para sortear palavras aleatoriamente
+import random  # Sorteia palavras aleatoriamente
 
-# Dicionário com listas de palavras, separadas por comprimento (5, 6 ou 7 letras)
+# Listas de palavras, separadas por comprimento (5, 6 ou 7 letras)
 PALAVRAS = {
     5: ['limao', 'amora', 'banco', 'carta', 'dente', 'folha', 'grade', 'honra', 'carne', 'feira', 'limpo', 'manga', 'noite', 'livro', 'pedra', 'tinta', 'roupa', 'sabor', 'tampa', 'praia', 'velho', 'vinho', 'sonho', 'lenda', 'manto'],
     6: ['banana', 'jardim', 'retina', 'correr', 'lanche', 'seguro', 'motivo', 'direto', 'janela', 'chance', 'origem', 'batata', 'viagem', 'alface', 'contra', 'truque', 'alface', 'temido', 'formal', 'objeto', 'acento', 'isento', 'prazer', 'sempre', 'rotina'],
     7: ['marisco', 'pantano', 'empatia', 'cultura', 'virtude', 'desenho', 'pintura', 'mercado', 'sucesso', 'alegria', 'orgulho', 'saudade', 'coragem', 'modesto', 'parcial', 'vigente', 'piedade', 'sentido', 'bizarro', 'intenso', 'ousadia', 'desafio', 'palavra', 'intuito', 'cuidado']
 }
 
-# Função para exibir as regras do jogo para o jogador
+# Função para exibir as regras do jogo
 def exibir_regras():
     print("==============================================")
-    print("            Bem-vindo ao TERMO.OOO!          ")
+    print("            Bem-vindo ao TERM.OOO!          ")
     print("==============================================")
     print("Regras do jogo:")
     print("1. Escolha a dificuldade: palavras de 5, 6 ou 7 letras.")
