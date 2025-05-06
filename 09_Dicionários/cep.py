@@ -25,7 +25,15 @@ def obtem_dados_endereco(cep):
 
 
 def validador_cep(cep):
-    pass
+    if len(cep) == 9:
+       cep = cep.replace('-', '')
+    if len(cep) != 8
+       return False
+    try:
+       int(cep)
+       return True
+    except:
+        return False
 
 
 def add_endereco(cache, endereco):
