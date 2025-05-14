@@ -17,10 +17,10 @@ run_tests 04_operadores_logicos_e_condicoes/
 run_tests 05_Listas,_tuplas_e_lacos_de_repeticao/
 run_tests 06_Listas_continuacao/
 run_tests 07_Exercicios/
-# run_tests 08_Strings_random/
-# run_tests 09_Dicionários/
-# run_tests 10_Introducao_a_funcoes/
-# run_tests 11_Funcoes_e_parametros_avancados/
+run_tests 08_Strings_random/
+run_tests 09_Dicionários/
+run_tests 10_Introducao_a_funcoes/
+run_tests 11_Funcoes_e_parametros_avancados/
 # run_tests 12_Funcoes_e_imports/
 # run_tests 13_exercicios_leetcode/
 # run_tests 14_manipulacao_de_datas/
