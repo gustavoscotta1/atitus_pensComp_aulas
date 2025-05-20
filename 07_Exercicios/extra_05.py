@@ -1,12 +1,12 @@
 def status_aluno(notas):
     if None in notas:
-        return False  # reprova se houver nota faltando
-
-    if all(nota == 10 for nota in notas):
-        return True  # passou com todas as notas 10
+        return False  
 
     if len(notas) == 0:
-        return False  # lista vazia reprova
+        return False  
+
+    if all(nota == 10 for nota in notas):
+        return True  
 
     media = sum(notas) / len(notas)
     return media >= 7
