@@ -1,4 +1,4 @@
-import http.client
+import http.client 
 import json
 
 LEN_CEP = 8
@@ -27,15 +27,12 @@ def consulta_ceps_conhecidos(ceps_conhecidos, cep):
     return False
 
 def validador_cep(cep):
-    if len(cep) == 9:
-        cep = cep.replace('-', '')
-    if len(cep) != 8:
-        return False
-    try:
-        int(cep)
+    # Aceita formato 12345678 ou 12345-678
+    if len(cep) == 8 and cep.isdigit():
         return True
-    except:
-        return False
+    if len(cep) == 9 and cep[5] == '-' and cep[:5].isdigit() and cep[6:].isdigit():
+        return True
+    return False
 
 def add_endereco(cache, endereco):
     cep = endereco.get("cep", "").replace('-', '')
@@ -56,32 +53,32 @@ def add_endereco(cache, endereco):
 
     return cache
 
-
+# Função de testes simples
 def test():
     assert validador_cep("99110000")
     assert validador_cep("99110-000")
     assert not validador_cep("99110 000")
-    assert not validador_cep("9911-0000")
+    assert not validador_cep("9911-0000")  # <- este é o que estava falhando antes
     assert not validador_cep("99110000 ")
     assert not validador_cep(" 99110000")
     assert not validador_cep("9911000")
 
-endereco_01 = {
-    "cep": "91110-000",
-    "logradouro": "Avenida Assis Brasil",
-    "localidade": "Porto Alegre",
-    "uf": "RS",
-}
-endereco_02 = {
-    "cep": "90240-111",
-    "logradouro": "Rua Frederico Mentz",
-    "localidade": "Porto Alegre",
-    "uf": "RS",
-}
+    endereco_01 = {
+        "cep": "91110-000",
+        "logradouro": "Avenida Assis Brasil",
+        "localidade": "Porto Alegre",
+        "uf": "RS",
+    }
+    endereco_02 = {
+        "cep": "90240-111",
+        "logradouro": "Rua Frederico Mentz",
+        "localidade": "Porto Alegre",
+        "uf": "RS",
+    }
 
-resposta_01 = {"RS": {"Porto Alegre": ["91110000"]}}
-assert add_endereco({}, endereco_01) == resposta_01
-assert add_endereco(resposta_01, endereco_01) == resposta_01
-assert add_endereco(resposta_01, endereco_02) == {
-    "RS": {"Porto Alegre": ["91110000", "90240111"]}
-}
+    resposta_01 = {"RS": {"Porto Alegre": ["91110000"]}}
+    assert add_endereco({}, endereco_01) == resposta_01
+    assert add_endereco(resposta_01, endereco_01) == resposta_01
+    assert add_endereco(resposta_01, endereco_02) == {
+        "RS": {"Porto Alegre": ["91110000", "90240111"]}
+    }
