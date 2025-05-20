@@ -9,7 +9,7 @@ def fatorial(numero):
     return resultado
 
 
-def test_fatorial(): 
+def test(): 
     assert fatorial(0) == 1
     assert fatorial(1) == 1
     assert fatorial(2) == 2
