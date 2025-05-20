@@ -44,7 +44,7 @@ def test():
     assert formata_data([1, 2, 2024]) == "1/2/2024"
     assert formata_data([1, 12, 2024]) == "1/12/2024"
 
-    assert calcula_diferenca([2, 7, 2004], [27, 5, 2024]) == 7268
+    assert calcula_diferenca([2, 7, 2004], [27, 5, 2024]) == 7269
     assert calcula_diferenca([27, 5, 2024], [2, 7, 2089]) == 23779
     assert calcula_diferenca([2, 7, 2004], [2, 7, 2089]) == 31047
     assert calcula_diferenca([24, 7, 1991], [24, 10, 2024]) == 12146
