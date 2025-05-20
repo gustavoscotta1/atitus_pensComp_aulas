@@ -49,4 +49,4 @@ def test():
     assert calcula_diferenca([2, 7, 2004], [2, 7, 2089]) == 31046
     assert calcula_diferenca([24, 7, 1991], [24, 10, 2024]) == 12146
     assert calcula_diferenca([24, 10, 2024], [24, 7, 2076]) == 18901
-    assert calcula_diferenca([24, 7, 1991], [24, 7, 2076]) == 31046
+    assert calcula_diferenca([24, 7, 1991], [24, 7, 2076]) == 31047
