@@ -1,13 +1,13 @@
 def valor_pgto(valor, forma_pgto):
 
-# valor = float(input("Digite um valor: "))
+valor = float(input("Digite um valor: "))
 
 print("Formas de pagamento:")
 print("1 - para PIX")
 print("2 - Para À Vista")
 print("3 - Parcelado em 2x sem juros")
 print("4 - Parcelado em 3x ou mais com juros")
-# forma_pgto = int(input("Escolha uma forma de Pagamento!"))
+forma_pgto = int(input("Escolha uma forma de Pagamento!"))
 
 if forma_pgto == 1:
     resultado = valor - (valor * (15 / 100))

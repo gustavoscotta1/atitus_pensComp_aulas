@@ -26,7 +26,7 @@ def status_aluno(notas):
         return True
     return False
 
-# notas_input = input("Digite as notas separadas por vírgula: ")
+notas_input = input("Digite as notas separadas por vírgula: ")
 notas = [float(nota) if nota.lower() != "none" else None for nota in notas_input.split(",")]  # Converte notas para lista de floats, tratando 'None'
 
 status = status_aluno(notas)

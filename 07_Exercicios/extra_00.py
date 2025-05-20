@@ -3,9 +3,9 @@ ANO_ATUAL = 2025
 
 def saudacao(nome, sobrenome, ano_nascimento):
 
-# nome = input('Qual o seu nome?')
-# sobrenome = input('Qual o seu sobrenome?')
-# ano_nascimento = int(input('Que ano você nasceu?'))
+nome = input('Qual o seu nome?')
+sobrenome = input('Qual o seu sobrenome?')
+ano_nascimento = int(input('Que ano você nasceu?'))
 idade = ANO_ATUAL - ano_nascimento
 print(f'olá, "{nome} {sobrenome}". Bom dia! você possui {idade}!')
 
