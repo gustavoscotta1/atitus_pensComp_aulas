@@ -3,8 +3,8 @@ def real_para_dolar(valor, tx_conversao):
         return None  
     return valor / tx_conversao
 
-valor = float(input("Digite o valor em reais (R$): "))
-taxa = float(input("Digite a taxa de conversão (ex: 5.20): "))
+# valor = float(input("Digite o valor em reais (R$): "))
+# taxa = float(input("Digite a taxa de conversão (ex: 5.20): "))
 
 resultado = real_para_dolar(valor, taxa)
 

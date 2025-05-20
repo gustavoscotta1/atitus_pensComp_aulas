@@ -30,8 +30,8 @@ def texto_com_letra_upper(texto, letra):
             novo_texto += caractere
     return novo_texto
 
-texto = input("Digite um texto: ")
-letra = input("Digite a letra que deseja analisar: ")
+# texto = input("Digite um texto: ")
+# letra = input("Digite a letra que deseja analisar: ")
 
 print("\nEscolha a opção desejada:")
 print("1 - Verificar se a letra está no texto")
