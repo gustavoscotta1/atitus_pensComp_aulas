@@ -3,17 +3,9 @@ def real_para_dolar(valor, taxa):
         return None  
     return valor / taxa
 
-valor = float(input("Digite o valor em reais (R$): "))
-taxa = float(input("Digite a taxa de conversão (ex: 5.20): "))
-
-resultado = real_para_dolar(valor, taxa)
-
-if resultado is not None:
-    print(f"O valor em dólares é: ${resultado}")
-else:
-    print("A taxa de conversão não pode ser zero.")
 
 def test():
-    assert real_para_dolar(500, 5.20) == 96.23
+    assert abs(real_para_dolar(500, 5.20) - 96.15384615384616) < 1e-9
     assert real_para_dolar(500, 1) == 500
-    assert real_para_dolar(500, 6) == 83.33333333333333
+    assert abs(real_para_dolar(500, 6) - 83.33333333333333) < 1e-9
+    assert real_para_dolar(500, 0) is None
