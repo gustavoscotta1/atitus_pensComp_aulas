@@ -1,5 +1,6 @@
 from typing import Optional
-def saudacao(nome: str, sobrenome: Optional[str] = None, titulo: str = 'Sr.'): -> str:
+
+def saudacao(nome: str, sobrenome: Optional[str] = None, titulo: str = 'Sr.') -> str:
     if nome == '':    
         return "Olá!"    
     if sobrenome is None:
