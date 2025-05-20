@@ -15,10 +15,11 @@ def advinha_senha(numero_sorteado, palpites):
 
     return respostas  
 
+
 def test():
     numero = 7
     palpites = [3, 8, 7]
-    resultado = advinha_senha(numero_sorteado, palpites)
+    resultado = advinha_senha(numero, palpites)
 
     assert resultado[0] == "O número sorteado é MAIOR do que o seu palpite."
     assert resultado[1] == "O número sorteado é MENOR do que o seu palpite."
