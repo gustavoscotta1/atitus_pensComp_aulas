@@ -78,9 +78,10 @@ endereco_02 = {
     "localidade": "Porto Alegre",
     "uf": "RS",
 }
+
 resposta_01 = {"RS": {"Porto Alegre": ["91110000"]}}
-    assert add_endereco({}, endereco_01) == resposta_01
-    assert add_endereco(resposta_01, endereco_01) == resposta_01
-    assert add_endereco(resposta_01, endereco_02) == {
+assert add_endereco({}, endereco_01) == resposta_01
+assert add_endereco(resposta_01, endereco_01) == resposta_01
+assert add_endereco(resposta_01, endereco_02) == {
     "RS": {"Porto Alegre": ["91110000", "90240111"]}
 }
