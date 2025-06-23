@@ -11,4 +11,20 @@ def get_movies(texto_busca: str) -> dict:
 
 
 def search_movie(movie_name: dict) -> dict:
-    pass
+    resultados = movie_name.get("results", [])
+    if resultados:
+        return resultados[0]
+    return None
+
+
+def test_search_movie():
+    sample_response = {
+        "results": [
+            {"title": "Inception", "year": 2010, "id": "tt1375666"},
+            {"title": "Interstellar", "year": 2014, "id": "tt0816692"}
+        ]
+    }
+
+    assert search_movie(sample_response) == {"title": "Inception", "year": 2010, "id": "tt1375666"}
+    assert search_movie({"results": []}) is None
+    assert search_movie({}) is None

@@ -22,7 +22,7 @@ matriz = [
     [7, 8, 9],
 ]
 
-def test():
+def test_soma_matriz():
     assert soma_matriz(matriz, 20)
     assert not soma_matriz(matriz, 18)
     assert not soma_matriz(matriz, 21)

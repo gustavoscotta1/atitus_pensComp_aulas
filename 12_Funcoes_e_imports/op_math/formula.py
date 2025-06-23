@@ -1,5 +1,8 @@
+import math
+
 def formula(a, b):
-    # Sem usar os operadores matemácios (+, -, /, *)
-    # return ((a + b) * (a - b)) / 2
-    # return divisao(multiplicacao(adicao(a, b), subtracao(a, b)), 2)
-    pass
+    soma = a + b
+    diferenca = a - b
+    produto = soma * diferenca
+    resultado = produto / 2
+    return resultado

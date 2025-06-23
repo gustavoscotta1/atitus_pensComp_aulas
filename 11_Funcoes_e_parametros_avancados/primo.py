@@ -8,7 +8,7 @@ def eh_primo(numero: int) -> bool:
         return True
     return False
 
-def test(): 
+def test_eh_primo(): 
     assert not eh_primo(-1)
     assert not eh_primo(0)
     assert not eh_primo(1)

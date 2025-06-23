@@ -9,7 +9,7 @@ def soma_pares(numeros: list, alvo: int) -> bool:
     return False
 
 
-def test():
+def test_soma_pares():
     assert soma_pares([1, 2], 4)
     assert not soma_pares([8], 1)
     assert not soma_pares([8], 10)

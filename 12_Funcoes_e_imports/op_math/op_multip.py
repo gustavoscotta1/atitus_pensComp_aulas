@@ -1,9 +1,20 @@
 def multiplicacao(a: int, b: int) -> int:
-    # multiplicacao(a, b): não pode usar o símbolo ‘*’
-    pass
+    resultado = 0
+    negativo = False
+    if a < 0:
+        a = -a
+        negativo = not negativo
+    if b < 0:
+        b = -b
+        negativo = not negativo
+    for _ in range(b):
+        resultado += a
+    if negativo:
+        resultado = -resultado
+    return resultado
 
-
-assert multiplicacao(-10, 2) == -20
-assert multiplicacao(10, -2) == -20
-assert multiplicacao(10, 2) == 20
-assert multiplicacao(10, 0) == 0
+def test_multiplicacao():
+    assert multiplicacao(-10, 2) == -20
+    assert multiplicacao(10, -2) == -20
+    assert multiplicacao(10, 2) == 20
+    assert multiplicacao(10, 0) == 0
